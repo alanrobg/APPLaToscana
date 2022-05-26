@@ -72,6 +72,13 @@ if(sesion.getAttribute("id_Cliente")== null){
                     <li><a href="../ubicanos.jsp">UBÍCANOS</a></li>
                     <li><a href="../CRUD.JSP">CRUD</a></li>
                 </ul>
+                <div class="right hide-on-med-and-down">
+            
+                    Bienvenid@ <%= sesion.getAttribute("correo")%> |
+                    <a href="../login.jsp?cerrar=true">Cerrar Sesion</a>
+                    <hr>
+            
+                </div>
             </div>
         </nav>
 
@@ -86,13 +93,7 @@ if(sesion.getAttribute("id_Cliente")== null){
     </header>
     
     <body>
-        <div align="right">
-            
-            Bienvenid@ <%= sesion.getAttribute("correo")%> |
-            <a href="../login.jsp?cerrar=true">Cerrar Sesion</a>
-            <hr>
-            
-        </div>
+        
         <h4>Ingreso como Administrador</h4>
         <div class="container" style="max-width: 500px">
         <h4 style="text-align: center">Mantenimiento de clientes</h4>
